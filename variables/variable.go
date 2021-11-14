@@ -14,9 +14,10 @@ var (
 	inside float32 = 45.34
 	block bool = false
 )
+//no private scope variables.
 
 var UPPERCASEVAR int = 45 //exported from package, globally visible.
-//written as java conventions.
+//written as java conventions. -- CAMELCASE & Pascal
 
 func main(){
 	// variable here takes precedence, (inner most packaging - shadowing).
