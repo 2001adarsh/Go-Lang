@@ -1,0 +1,9 @@
+BEST PRACTICES:
+
+1. Don't create goroutines in libraries (if not using channels)
+    - Let consumer control concurrency.
+2. When creating a goroutines, know how it will end.
+    - Avoid subtle memory leaks.
+3. Check for race condition at compile time.
+    -  go run -race .\Goroutines\goroutine.go : command to check race by GO.
+
